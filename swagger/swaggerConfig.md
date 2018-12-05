@@ -16,7 +16,7 @@ On ajoute dans le fichier pom.xml du projet maven les dépendances suivantes.
 		</dependency>
 ```
 ## Configuration
-1. Ajouer dans la classe main du projet spring boot l'annotation suivante.
+1. Ajouter dans la classe main du projet spring boot l'annotation suivante.
 ```java
 @EnableSwagger2
 
@@ -62,20 +62,20 @@ public class SwaggerConfig {
 La bean Api vouspermet de spécifier le package qui sera scanner et qui contient vous ressources à exposer généralement les controllers (@RestController). Ainsi de definir plusieurs méthodes comme ApiInfo qui vous présente des informations générale sur Api. Il est possible aussi d'ajouter des restrictions sur des chemins, de personnaliser les codes de retour http  ....
 ## Annotation utiles
 Pour faciliter la documentations plusieurs annotations sont fournies.
-1.pour annoter une class (controller) : 
+1.Annotation pour les classes (controller) : 
 ```java
         @Api(value="users", description="get and post users ")
         public class UserController {
         }
 ```
-2.pour annoter une méthode : 
+2.Annotations sur les  méthodes : 
 ```java
         @ApiOperation(value = "View a list of users)
         @GetMapping("/users")	public List<User> findAll() {
 		return userRepository.findAll();
 	}
 ```
-3. Annotations pour des codes de retour http : 
+3. Annotations pour les codes de retour http : 
 ```java
        @ApiResponses(value = {
        @ApiResponse(code = 200, message = "Successfully retrieved list"),
