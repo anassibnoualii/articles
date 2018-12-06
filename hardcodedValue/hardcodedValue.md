@@ -59,6 +59,39 @@ file.path=C:\\Program Files\\folder\\file.txt
 
 }
 ```
+### Quatrième  
+Définir une classe pour faire le mapping entre le fichier application.properties(example), géréralement un fichier dédié au configuration.
+1. définir le fichier de configuration.
+```file 
+user.name=anass
+user.email=email@email.com
+```
+2. déclaration de la classe de configuration avec l'ajout de certainnes annotations.
+```java
+@Configuration
+@ConfigurationProperties(prefix="user")
+public class User {
+	private String name;
+	private String email;
+	// getters et setters
+```
+3. utilisation de la configuration
+```java
+  @RestController
+  public class UserController {
+	@Autowired
+	User user;
+
+	@GetMapping("/users")
+	User getUser() {
+		User storeUser = new User();
+		storeUser.setName(user.getName());
+		storeUser.setEmail(user.getEmail());
+		return storeUser;
+		}
+
+	}
+```
 Brief l'externalisation des valeurs reste valable pour plusieurs cas (URL,chemin de fichier, configuration de base de données,données par defaut, ......) .
 
 Pour plus de détails sur les règles de contrôle de qualité de code n'hésitez pas à visiter ce lien.[sonarsource](https://rules.sonarsource.com/java/RSPEC-1075)
