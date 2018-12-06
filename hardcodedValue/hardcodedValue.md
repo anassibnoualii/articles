@@ -1,6 +1,6 @@
 ## Introduction (problématique)
 Avez vous déjà rencontré un warning de sonar qui vous dit hey " VARIABLE should not be hardcoded"
-c'est le cas d'éviter ce problème. (c'est juste une introdution pour monter l'interêt de cet outils  👍).
+c'est le cas d'éviter ce problème. (c'est juste une introdution pour monter l'interêt de cet outil  👍).
 
 La régle générale : [URIs should not be hardcoded](https://rules.sonarsource.com/java/RSPEC-1075)
 code smell
