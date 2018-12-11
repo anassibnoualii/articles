@@ -42,7 +42,7 @@ Installer les éléments suivants comme indiqué sur la documentation officielle
 }
 ```
 
-6. pour plus dinfo voici une [Documentation vers Elasticsearch](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-elasticsearch)
+6. pour plus d'info voici une [Documentation vers Elasticsearch](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-elasticsearch)
 
 ### FILEBEAT
 
@@ -56,7 +56,7 @@ Installer les éléments suivants comme indiqué sur la documentation officielle
 4. Lancer Filebeat du même dossier ``` .\install-service-filebeat.ps1 ```
 5. configuration (TODO)
 
-6. pour plus dinfo voici une [Documentation vers Filebeat](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-beats)
+6. pour plus d'info voici une [Documentation vers Filebeat](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-beats)
 
 
 ### LOGSTASH
@@ -69,7 +69,7 @@ Installer les éléments suivants comme indiqué sur la documentation officielle
 3. ajout de configuration ( TODO)
 
 
-4. pour plus dinfo voici une [Documentation versLogstach](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-logstash)
+4. pour plus d'info voici une [Documentation versLogstach](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-logstash)
 
 ### KIBANA
 <img src="images/kibana.png" width="100" height="100">
@@ -83,7 +83,7 @@ Installer les éléments suivants comme indiqué sur la documentation officielle
 4. Lancer Filebeat du même dossier ``` bin\kibana.bat ```
 5. Pour s'assuer de lancement de kibana on lance l'url suivant  ``` http://127.0.0.1:5601 ``` on doit voir son interface
 
-6. pour plus dinfo voici une [Documentation vers Kibana](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-kibana) .
+6. pour plus d'info voici une [Documentation vers Kibana](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-kibana) .
  
 # Architecture 
 ![ELK Stack](images/archi.png)
