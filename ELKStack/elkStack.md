@@ -1,3 +1,4 @@
+
 # Introduction
 ELK est une solution open source constituée de trois logiciels : Elasticseach, Logstash, Kibana. Cette solution a été développée par Elastic (https://www.elastic.co/) et se nomme aujourd’hui Elastic Stack.
 
@@ -10,37 +11,79 @@ Le tout permet d’entrer des logs pour les parser et les filtrer (Logstash), de
 Installer les éléments suivants comme indiqué sur la documentation officielle (en ajustant la version si nécessaire) :
 
 ### ELASTICSEARCH
+<img src="images/elasticsearch.png" width="100" height="100">
 
 1. [Télécharger le fichier zip d'Elasticsearch 6.5.3 de la page de téléchargement.](https://www.elastic.co/downloads/elasticsearch)
 2. Extraire le fichier zip dans l'emplacement 
 ``` C:\Program Files ``` 
 (de préference :D )
 3. Ouvrez une invite de commande en tant qu'administrateur et accédez au répertoire contenant les fichiers extraits, par exemple:
-
 ``` cd C:\Program Files\elasticsearch-6.5.3 ```
 
-4. Lancer Elasticsearch du même dossier 
-``` bin\elasticsearch.bat ```
+4. Lancer Elasticsearch du même dossier ``` bin\elasticsearch.bat ```
+5. Pour s'assuer de lancement d'elasticsearch on lance l'url suivant  ``` http://127.0.0.1:9200 ``` on doit avoir un résultat qui resemple à l'object suivant
+``` JSON
+{
+  "name" : "QtI5dUu",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "DMXhqzzjTGqEtDlkaMOzlA",
+  "version" : {
+    "number" : "6.5.3",
+    "build_flavor" : "default",
+    "build_type" : "tar",
+    "build_hash" : "00d8bc1",
+    "build_date" : "2018-06-06T16:48:02.249996Z",
+    "build_snapshot" : false,
+    "lucene_version" : "7.3.1",
+    "minimum_wire_compatibility_version" : "5.6.0",
+    "minimum_index_compatibility_version" : "5.0.0"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
 
-5. pour plus dinfo voici une [Documentation vers Elasticsearch](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-elasticsearch)
+6. pour plus dinfo voici une [Documentation vers Elasticsearch](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-elasticsearch)
 
 ### FILEBEAT
 
-[Télécharger Filabeat](https://www.elastic.co/downloads/beats/filebeat)
+1. [Télécharger le fichier zip de Filebeat 6.5.3 de la page de téléchargement.](https://www.elastic.co/downloads/beats/filebeat)
+2. Extraire le fichier zip dans l'emplacement 
+``` C:\Program Files ``` 
+(de préference :D )
+3. Ouvrez une invite de commande en tant qu'administrateur et accédez au répertoire contenant les fichiers extraits, par exemple:
+``` cd C:\Program Files\Filebea ```
 
-[Documentation vers Filebeat](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-beats)
+4. Lancer Filebeat du même dossier ``` .\install-service-filebeat.ps1 ```
+5. configuration (TODO)
+
+6. pour plus dinfo voici une [Documentation vers Filebeat](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-beats)
+
 
 ### LOGSTASH
+<img src="images/logstash.png" width="100" height="100">
 
-[Télécharger Logstach](https://www.elastic.co/downloads/logstash)
+1. [Télécharger le fichier zip de Logstash 6.5.3 de la page de téléchargement.](https://www.elastic.co/downloads/logstash)
+2. Extraire le fichier zip dans l'emplacement 
+``` C:\Program Files ``` 
+(de préference :D )
+3. ajout de configuration ( TODO)
 
-[Documentation versLogstach](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-logstash)
+
+4. pour plus dinfo voici une [Documentation versLogstach](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-logstash)
 
 ### KIBANA
+<img src="images/kibana.png" width="100" height="100">
 
-[Télécharger Kibana](https://www.elastic.co/downloads/kibana)
+1. [Télécharger le fichier zip de Kibana 6.5.3 de la page de téléchargement.](https://www.elastic.co/downloads/kibana)
+2. Extraire le fichier zip dans l'emplacement 
+``` C:\Program Files ``` 
+(de préference :D )
+3. Ouvrez une invite de commande en tant qu'administrateur et accédez au répertoire contenant les fichiers extraits, par exemple:
+``` cd C:\Program Files\kibana-6.5.3-windows ```
+4. Lancer Filebeat du même dossier ``` bin\kibana.bat ```
+5. Pour s'assuer de lancement de kibana on lance l'url suivant  ``` http://127.0.0.1:5601 ``` on doit voir son interface
 
-[Documentation vers Kibana](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-kibana)
+6. pour plus dinfo voici une [Documentation vers Kibana](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-kibana) .
  
 # Architecture 
 ![ELK Stack](images/archi.png)
