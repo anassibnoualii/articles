@@ -11,9 +11,18 @@ Installer les éléments suivants comme indiqué sur la documentation officielle
 
 ### ELASTICSEARCH
 
-[Télécharger Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
+1. [Télécharger le fichier zip d'Elasticsearch 6.5.3 de la page de téléchargement.](https://www.elastic.co/downloads/elasticsearch)
+2. Extraire le fichier zip dans l'emplacement 
+``` C:\Program Files ``` 
+(de préference :D )
+3. Ouvrez une invite de commande en tant qu'administrateur et accédez au répertoire contenant les fichiers extraits, par exemple:
 
-[Documentation vers Elasticsearch](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-elasticsearch)
+``` cd C:\Program Files\elasticsearch-6.5.3 ```
+
+4. Lancer Elasticsearch du même dossier 
+``` bin\elasticsearch.bat ```
+
+5. pour plus dinfo voici une [Documentation vers Elasticsearch](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-elasticsearch)
 
 ### FILEBEAT
 
