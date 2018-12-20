@@ -60,7 +60,7 @@ file.path=C:\\Program Files\\folder\\file.txt
 }
 ```
 ### Quatrième  
-Définir une classe pour faire le mapping entre le fichier application.properties(example), géréralement un fichier dédié au configuration.
+Définir une classe pour faire le mapping entre le fichier application.properties(example), géréralement un fichier dédié au configuration et une classe java.
 1. définir le fichier de configuration.
 ```file 
 user.name=anass
@@ -92,6 +92,7 @@ public class User {
 
 	}
 ```
+Les bonnes méthodes pour remédier à ce problème sont la 3ème et la 4ème. 
 Brief l'externalisation des valeurs reste valable pour plusieurs cas (URL,chemin de fichier, configuration de base de données,données par defaut, ......) .
 
 Pour plus de détails sur les règles de contrôle de qualité de code n'hésitez pas à visiter ce lien.[sonarsource](https://rules.sonarsource.com/java/RSPEC-1075)
