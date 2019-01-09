@@ -1,8 +1,8 @@
 ## Introduction 
-Le swagger est une documentation  qui spécifie généralement l'utilisation d'une API. Donc son interêt est décrire l'ensemble des
-fonctionnalités fournises par une API. C'est-à-dire  comment exploiter les ressources exposées par l'API.
+Le swagger est une documentation  qui spÃ©cifie gÃ©nÃ©ralement l'utilisation d'une API. Donc son interÃªt est dÃ©crire l'ensemble des
+fonctionnalitÃ©s fournises par une API. C'est-Ã -dire  comment exploiter les ressources exposÃ©es par l'API.
 ## Dependency
-On ajoute dans le fichier pom.xml du projet maven les dépendances suivantes.
+On ajoute dans le fichier pom.xml du projet maven les dÃ©pendances suivantes.
 ``` 
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -24,7 +24,6 @@ On ajoute dans le fichier pom.xml du projet maven les dépendances suivantes.
 Comme suit.
 ```java
 @SpringBootApplication
-@EnableSwagger2
 public class SpringBootAngularApplication {
 
 	public static void main(String[] args) {
@@ -33,7 +32,7 @@ public class SpringBootAngularApplication {
 }
 
 ```
-2. créer une classe de configuration qui contient les annotations suivantes : 
+2. crÃ©er une classe de configuration qui contient les annotations suivantes : 
 ```java
 @Configuration
 @EnableSwagger2
@@ -58,8 +57,8 @@ public class SwaggerConfig {
 
 }
 ```
-3. Implimenter les beans et  méthodes que vous avez besoin : 
-La bean Api vouspermet de spécifier le package qui sera scanner et qui contient vous ressources à exposer généralement les controllers (@RestController). Ainsi de definir plusieurs méthodes comme ApiInfo qui vous présente des informations générale sur Api. Il est possible aussi d'ajouter des restrictions sur des chemins, de personnaliser les codes de retour http  ....
+3. Implimenter les beans et  mÃ©thodes que vous avez besoin : 
+La bean Api vouspermet de spÃ©cifier le package qui sera scanner et qui contient vous ressources Ã  exposer gÃ©nÃ©ralement les controllers (@RestController). Ainsi de definir plusieurs mÃ©thodes comme ApiInfo qui vous prÃ©sente des informations gÃ©nÃ©rale sur Api. Il est possible aussi d'ajouter des restrictions sur des chemins, de personnaliser les codes de retour http  ....
 ## Annotation utiles
 Pour faciliter la documentations plusieurs annotations sont fournies.
 1.Annotation pour les classes (controller) : 
@@ -68,7 +67,7 @@ Pour faciliter la documentations plusieurs annotations sont fournies.
         public class UserController {
         }
 ```
-2.Annotations sur les  méthodes : 
+2.Annotations sur les  mÃ©thodes : 
 ```java
         @ApiOperation(value = "View a list of users)
         @GetMapping("/users")	public List<User> findAll() {
