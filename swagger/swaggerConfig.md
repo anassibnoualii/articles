@@ -1,6 +1,9 @@
 ## Introduction 
-Le swagger est une documentation  qui spécifie généralement l'utilisation d'une API. Donc son interêt est décrire l'ensemble des
+Le swagger est une documentation  qui spécifie généralement l'utilisation d'une API.
+
+Donc son interêt est décrire l'ensemble des
 fonctionnalités fournises par une API. C'est-à-dire  comment exploiter les ressources exposées par l'API.
+
 ## Dependency
 On ajoute dans le fichier pom.xml du projet maven les dépendances suivantes.
 ``` 
@@ -43,9 +46,13 @@ public class SwaggerConfig {
 }
 ```
 2. Implimenter les beans et  méthodes que vous avez besoin : 
-La bean Api vouspermet de spécifier le package qui sera scanner et qui contient vous ressources à exposer généralement les controllers (@RestController). Ainsi de definir plusieurs méthodes comme ApiInfo qui vous présente des informations générale sur Api. Il est possible aussi d'ajouter des restrictions sur des chemins, de personnaliser les codes de retour http  ....
+
+La bean Api vouspermet de spécifier le package qui sera scanner et qui contient vous ressources à exposer généralement les controllers (@RestController). Ainsi de definir plusieurs méthodes comme ApiInfo qui vous présente des informations générale sur Api. 
+
+Il est possible aussi d'ajouter des restrictions sur des chemins, de personnaliser les codes de retour http  ....
 ## Annotation utiles
 Pour faciliter la documentations plusieurs annotations sont fournies.
+
 1.Annotation pour les classes (controller) : 
 ```java
         @Api(value="users", description="get and post users ")
