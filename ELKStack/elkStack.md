@@ -6,14 +6,14 @@ Cette solution a été développée par Elastic (https://www.elastic.co/) et se 
 
 Le tout permet d’entrer des logs pour les parser et les filtrer (Logstash), de les stocker dans un moteur de recherche puissant qui peut gérer de grands volumes de données (Elasticsearch) et d’en faire des tableaux de bord qui comportent des graphiques, tableaux, camemberts et autres. Mais aussi de faire des recherches précises afin de trouver les informations voulues (Kibana). Cet outil est donc très pratique pour visualiser et rechercher des logs et nous évite de lire les fichiers en dur.
 
-![ELK Stack](elk/elkStack.png)
+![ELK Stack](images/elkStack.png)
 
 
 # Installation
 Installer les éléments suivants comme indiqué sur la documentation officielle (en ajustant la version si nécessaire) :
 
 ## 1. ELASTICSEARCH
-<img src="elk/elasticsearch.png" width="100" height="100">
+<img src="images/elasticsearch.png" width="100" height="100">
 
 1. [Télécharger le fichier zip d'Elasticsearch 6.5.3 de la page de téléchargement.](https://www.elastic.co/downloads/elasticsearch)
 2. Extraire le fichier zip dans un emplacement, par exemple.
@@ -75,7 +75,7 @@ Installer les éléments suivants comme indiqué sur la documentation officielle
 
 
 ## 3. LOGSTASH
-<img src="elk/logstash.png" width="100" height="100">
+<img src="images/logstash.png" width="100" height="100">
 
 1. [Télécharger le fichier zip de Logstash 6.5.3 de la page de téléchargement.](https://www.elastic.co/downloads/logstash)
 2. Extraire le fichier zip dans un emplacement par exemple :  
@@ -110,7 +110,7 @@ output {
 5. Pour plus d'info voici  [le lien vers la documentation de Logstach](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-logstash)
 
 ## 4. KIBANA
-<img src="elk/kibana.png" width="100" height="100">
+<img src="images/kibana.png" width="100" height="100">
 
 1. [Télécharger le fichier zip de Kibana 6.5.3 de la page de téléchargement.](https://www.elastic.co/downloads/kibana)
 2. Extraire le fichier zip dans un emplacement, par exemple  
@@ -123,4 +123,4 @@ output {
 6. Pour plus d'info voici [le lien vers la documentation de Kibana](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html#install-kibana) .
  
 # Architecture 
-![ELK Stack](elk/archi.png)
+![ELK Stack](images/archi.png)
