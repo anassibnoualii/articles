@@ -63,34 +63,25 @@ file.path=C:\\Program Files\\folder\\file.txt
 Définir une classe pour faire le mapping entre le fichier application.properties(example), géréralement un fichier dédié au configuration et une classe java.
 1. définir le fichier de configuration.
 ```file 
-user.name=anass
-user.email=email@email.com
+file.path=file.path=C:\\Program Files\\folder\\file.txt
 ```
 2. déclaration de la classe de configuration avec l'ajout de certainnes annotations.
 ```java
 @Configuration
-@ConfigurationProperties(prefix="user")
-public class User {
-	private String name;
-	private String email;
-	// getters et setters
+@ConfigurationProperties(prefix="file")
+public class FileParser {
+	private String path;
+	// geters et setters
+	
 ```
 3. utilisation de la configuration
 ```java
-  @RestController
-  public class UserController {
-	@Autowired
-	User user;
-
-	@GetMapping("/users")
-	User getUser() {
-		User storeUser = new User();
-		storeUser.setName(user.getName());
-		storeUser.setEmail(user.getEmail());
-		return storeUser;
-		}
-
-	}
+  public class FileParser{
+        public void readFile() throws FileNotFoundException{
+		FileParser file = new FileParser();
+        	BufferedReader br = new BufferedReader(new FileReader(file.getPath());
+             
+        }
 ```
 Les bonnes méthodes pour remédier à ce problème sont la 3ème et la 4ème. 
 Brief l'externalisation des valeurs reste valable pour plusieurs cas (URL,chemin de fichier, configuration de base de données,données par defaut, ......) .
